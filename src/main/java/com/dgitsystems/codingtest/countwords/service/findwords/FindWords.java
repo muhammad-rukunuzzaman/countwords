@@ -14,5 +14,5 @@ import java.util.List;
  *
  */
 public abstract class FindWords {
-	public abstract List<String> find(int longerThan);
+	public abstract List<String> find(List<String> inputStrList, int longerThan);
 }

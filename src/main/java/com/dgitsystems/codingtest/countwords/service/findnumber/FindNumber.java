@@ -7,11 +7,12 @@
  */
 package com.dgitsystems.codingtest.countwords.service.findnumber;
 
+import java.util.List;
 
 /**
  * @author Rokon
  *
  */
 public abstract class FindNumber {
-	public abstract int find();
+	public abstract int find(List<String> inputStrList);
 }

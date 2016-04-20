@@ -22,8 +22,8 @@ import org.apache.log4j.Logger;
 public class DataRepository {
 
 	/*
-	 * This method reads the name strings form a text file "names.txt" in the current directory
-	 * Returns list of name Strings 
+	 * This method reads the name strings form a text file "names.txt" in the
+	 * current directory Returns list of name Strings
 	 */
 	public List<String> getInputStrList() {
 

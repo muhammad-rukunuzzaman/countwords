@@ -40,11 +40,11 @@ PROJECT FORMATION:
 	5. Main client program is "com.dgitsystems.codingtest.countwords.main.Main" 
 	6. log4j is used for logging purpose.
 	7. This is a Maven project, can be opened in any editor that supports Maven
-	8. In this release JUNIT Test cases are not implemented.
+	8. UNIT Test cases are included.
 
 Requirements
 ------------
-	pom.xml contains all dependencies
+	Please refer to pom.xml
 	
 Installation
 ------------
