@@ -34,7 +34,7 @@ public class FindWordsLongerThanSpecifiedCharacters extends FindWords {
 				}
 			}
 		} else {
-			log.info("Input file missing or No names found in the input file!");
+			log.info("No names found in the input file!");
 		}
 		return longerThanList;
 	}

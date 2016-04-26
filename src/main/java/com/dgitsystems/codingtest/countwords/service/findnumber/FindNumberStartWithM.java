@@ -21,7 +21,6 @@ public class FindNumberStartWithM extends FindNumber {
 	@Override
 	public int find(List<String> inputStrList) {
 		int numberCount = 0;
-		// List<String> inputStrList = dataRepository.getInputStrList();
 
 		if (!inputStrList.isEmpty()) {
 			for (String name : inputStrList) {

@@ -6,6 +6,8 @@ package com.dgitsystems.codingtest.countwords.main;
 import java.util.List;
 
 import com.dgitsystems.codingtest.countwords.dao.DataRepository;
+import com.dgitsystems.codingtest.countwords.factories.FindNumberFactory;
+import com.dgitsystems.codingtest.countwords.factories.FindWordsFactory;
 import com.dgitsystems.codingtest.countwords.service.findnumber.FindNumber;
 import com.dgitsystems.codingtest.countwords.service.findnumber.FindNumberStartWithM;
 import com.dgitsystems.codingtest.countwords.service.findwords.FindWords;
@@ -40,12 +42,14 @@ public class Main {
 		 * Counts and returns the NUMBER of words (i.e. Strings) that start with
 		 * "M" or "m"
 		 */
-		FindNumber findNumber = new FindNumberStartWithM();
+		FindNumberFactory findNumberFactory = new FindNumberFactory();
+		FindNumber findNumber = findNumberFactory.getFindNumberConcrete("START_WITH_M");
 		int count = findNumber.find(inputNamesList);
 		System.out.println("Total NUMBER of words that start with \"M\" or \"m\": " + count);
 
 		/* Returns all the words longer than 5 characters */
-		FindWords findWords = new FindWordsLongerThanSpecifiedCharacters();
+		FindWordsFactory findWordsFactory = new FindWordsFactory();
+		FindWords findWords = findWordsFactory.getFindWordsConcrete("LONGER_THAN_SPECIFIED_CHAR");
 		List<String> greaterThanList = findWords.find(inputNamesList, 5);
 		System.out.println("Words longer than 5 characters: " + greaterThanList);
 	}
