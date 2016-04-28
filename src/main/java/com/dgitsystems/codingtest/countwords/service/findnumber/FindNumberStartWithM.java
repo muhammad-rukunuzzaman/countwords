@@ -5,32 +5,25 @@
  */
 package com.dgitsystems.codingtest.countwords.service.findnumber;
 
-import java.util.List;
 import org.apache.log4j.Logger;
 
 /**
  * @author Rokon
  *
  */
-public class FindNumberStartWithM extends FindNumber {
+public class FindNumberStartWithM implements FindNumber {
 
 	/* log4j logging */
 	static Logger log = Logger.getLogger(FindNumberStartWithM.class);
+	
+	/*static counter to be incremented in matching cases*/
+	public static int numberCount = 0;
 
 	/* finds the number of words starts with M or m */
 	@Override
-	public int find(List<String> inputStrList) {
-		int numberCount = 0;
-
-		if (!inputStrList.isEmpty()) {
-			for (String name : inputStrList) {
-				if (name.substring(0, 1).equalsIgnoreCase("m")) {
-					numberCount += 1;
-				}
-			}
-		} else {
-			log.info("No names found in the input file!");
+	public void find(String sCurrentLine) {
+		if (sCurrentLine.substring(0, 1).equalsIgnoreCase("m")) {
+			numberCount += 1;
 		}
-		return numberCount;
 	}
 }

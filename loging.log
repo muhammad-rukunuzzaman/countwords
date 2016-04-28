@@ -1,46 +1,27 @@
-2016-04-20 07:47:50 ERROR DataRepository:42 - 
+2016-04-29 09:11:14 ERROR Main:70 - 
 java.io.FileNotFoundException: names.txt (The system cannot find the file specified)
 	at java.io.FileInputStream.open(Native Method)
 	at java.io.FileInputStream.<init>(Unknown Source)
 	at java.io.FileReader.<init>(Unknown Source)
-	at com.dgitsystems.codingtest.countwords.dao.DataRepository.getInputStrList(DataRepository.java:33)
-	at com.dgitsystems.codingtest.countwords.main.Main.main(Main.java:22)
-2016-04-20 08:09:53 ERROR DataRepository:42 - 
+	at com.dgitsystems.codingtest.countwords.main.Main.main(Main.java:52)
+2016-04-29 09:16:30 ERROR Main:75 - 
 java.io.FileNotFoundException: names.txt (The system cannot find the file specified)
 	at java.io.FileInputStream.open(Native Method)
 	at java.io.FileInputStream.<init>(Unknown Source)
 	at java.io.FileReader.<init>(Unknown Source)
-	at com.dgitsystems.codingtest.countwords.dao.DataRepository.getInputStrList(DataRepository.java:34)
-	at com.dgitsystems.codingtest.countwords.main.Main.main(Main.java:23)
-2016-04-20 08:09:53 ERROR DataRepository:42 - 
+	at com.dgitsystems.codingtest.countwords.main.Main.main(Main.java:52)
+2016-04-29 09:17:30 ERROR Main:75 - 
 java.io.FileNotFoundException: names.txt (The system cannot find the file specified)
 	at java.io.FileInputStream.open(Native Method)
 	at java.io.FileInputStream.<init>(Unknown Source)
 	at java.io.FileReader.<init>(Unknown Source)
-	at com.dgitsystems.codingtest.countwords.dao.DataRepository.getInputStrList(DataRepository.java:34)
-	at com.dgitsystems.codingtest.countwords.service.findnumber.FindNumberStartWithM.find(FindNumberStartWithM.java:28)
-	at com.dgitsystems.codingtest.countwords.main.Main.main(Main.java:27)
-2016-04-20 08:09:53 INFO  FindNumberStartWithM:36 - No names found in the input file!
-2016-04-20 08:10:52 ERROR DataRepository:42 - 
+	at com.dgitsystems.codingtest.countwords.main.Main.main(Main.java:52)
+2016-04-29 09:19:49 ERROR Main:75 - 
 java.io.FileNotFoundException: names.txt (The system cannot find the file specified)
 	at java.io.FileInputStream.open(Native Method)
 	at java.io.FileInputStream.<init>(Unknown Source)
 	at java.io.FileReader.<init>(Unknown Source)
-	at com.dgitsystems.codingtest.countwords.dao.DataRepository.getInputStrList(DataRepository.java:34)
-	at com.dgitsystems.codingtest.countwords.main.Main.main(Main.java:23)
-2016-04-20 08:10:52 ERROR DataRepository:42 - 
-java.io.FileNotFoundException: names.txt (The system cannot find the file specified)
-	at java.io.FileInputStream.open(Native Method)
-	at java.io.FileInputStream.<init>(Unknown Source)
-	at java.io.FileReader.<init>(Unknown Source)
-	at com.dgitsystems.codingtest.countwords.dao.DataRepository.getInputStrList(DataRepository.java:34)
-	at com.dgitsystems.codingtest.countwords.service.findnumber.FindNumberStartWithM.find(FindNumberStartWithM.java:28)
-	at com.dgitsystems.codingtest.countwords.main.Main.main(Main.java:27)
-2016-04-20 08:10:52 INFO  FindNumberStartWithM:36 - Input file missing or No names found in the input file!
-2016-04-20 08:13:54 INFO  FindNumberStartWithM:38 - Input file missing or No names found in the input file!
-2016-04-20 08:14:43 INFO  FindNumberStartWithM:38 - Input file missing or No names found in the input file!
-2016-04-20 08:16:08 INFO  FindNumberStartWithM:38 - Input file missing or No names found in the input file!
-2016-04-20 08:16:42 INFO  FindNumberStartWithM:38 - Input file missing or No names found in the input file!
-2016-04-20 08:17:43 INFO  FindNumberStartWithM:38 - Input file missing or No names found in the input file!
-2016-04-20 08:18:18 INFO  FindNumberStartWithM:38 - Input file missing or No names found in the input file!
-2016-04-20 08:19:15 INFO  FindNumberStartWithM:38 - Input file missing or No names found in the input file!
+	at com.dgitsystems.codingtest.countwords.main.Main.main(Main.java:52)
+2016-04-29 09:20:28 INFO  FindWordsLongerThanSpecifiedCharacters:28 - Words longer than 5 characters: Marvin
+2016-04-29 09:20:28 INFO  FindWordsLongerThanSpecifiedCharacters:28 - Words longer than 5 characters: Manazir
+2016-04-29 09:20:28 INFO  FindWordsLongerThanSpecifiedCharacters:28 - Words longer than 5 characters: Fredrick
