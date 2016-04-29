@@ -1,19 +1,17 @@
 /**
  * Implementation of 
- * Req 2.	Returns all the words longer than 5 characters
+ * Req 2.	Returns all the words longer than Specified characters
  * 
  */
 package com.dgitsystems.codingtest.countwords.service.findwords;
 
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.log4j.Logger;
 
 /**
  * @author Rokon
  *
  */
-public class FindWordsLongerThanSpecifiedCharacters extends FindWords {
+public class FindWordsLongerThanSpecifiedCharacters implements FindWords {
 
 	/* log4j logging */
 	static Logger log = Logger.getLogger(FindWordsLongerThanSpecifiedCharacters.class);
@@ -23,19 +21,10 @@ public class FindWordsLongerThanSpecifiedCharacters extends FindWords {
 	 * received in the Argument
 	 */
 	@Override
-	public List<String> find(List<String> inputStrList, int longerThan) {
+	public void find(String sCurrentLine, int longerThan) {
 
-		List<String> longerThanList = new ArrayList<String>();
-
-		if (!inputStrList.isEmpty()) {
-			for (String name : inputStrList) {
-				if (name.length() > longerThan) {
-					longerThanList.add(name);
-				}
-			}
-		} else {
-			log.info("Input file missing or No names found in the input file!");
+		if (sCurrentLine.length() > longerThan) {
+			System.out.println("Words longer than " + longerThan + " characters: " + sCurrentLine);
 		}
-		return longerThanList;
 	}
 }
