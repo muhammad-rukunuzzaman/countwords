@@ -52,3 +52,13 @@ Installation
 FAQ
 ---
     For any queries please send me a mail at rokon.63@gmail.com or call me at +61452598219 
+    
+On Big File Release
+-------------------
+Below are the changes:
+
+     * Exclusion of reading the whole file in memory
+     * BufferedReader (considering input is a text file) is used to improve the memory usage and performance
+     * File is read one line at a time and business logic is applied during reading the file.
+     
+
